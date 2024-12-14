@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Competences() {
     const competences = {
         "Langages de programmation": [
@@ -48,11 +50,12 @@ export default function Competences() {
                             {skills.map((skill, skillIndex) => (
                                 <li key={skillIndex} className="skill-item">
                                     {/* Ajout de l'icône */}
-                                    <img
+                                    <Image
                                         src={getIconPath(skill)}
                                         alt={`${skill} logo`}
+                                        width={800}
+                                        height={450}
                                         className="skill-icon"
-                                        loading="lazy"
                                     />
                                     {skill}
                                 </li>

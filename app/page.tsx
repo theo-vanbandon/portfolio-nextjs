@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import Link from "next/link";
+import Image from "next/image";
 const Studies = dynamic(() => import('./components/Studies'));
 const Experiences = dynamic(() => import('./components/Experiences'));
 const Competences = dynamic(() => import('./components/Competences'));
@@ -32,7 +33,12 @@ export default function HomePage() {
 
                 {/* Photo */}
                 <div className="hero-photo">
-                    <img src="/images/me.webp" alt="Théo Vanbandon"/>
+                    <Image
+                        src="/images/me.webp"
+                        alt="Théo Vanbandon"
+                        width={800}
+                        height={450}
+                    />
                 </div>
             </div>
 
