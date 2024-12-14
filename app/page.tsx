@@ -14,12 +14,14 @@ export default function HomePage() {
                     <h1>Bienvenue sur mon</h1>
                     <p>PORTFOLIO</p>
                     <p>
-                        Je suis Théo Vanbandon, développeur passionné par la création d'applications web et logicielles.
+                        Je suis Théo Vanbandon, développeur passionné par la création d&apos;applications web et
+                        logicielles.
                         Mon approche consiste à allier technologie et simplicité pour répondre aux besoins des
                         utilisateurs.
                     </p>
                     <p>
-                        Toujours curieux d'apprendre et d'explorer de nouvelles technologies, je m'efforce de livrer des
+                        Toujours curieux d&apos;apprendre et d&apos;explorer de nouvelles technologies, je
+                        m&apos;efforce de livrer des
                         projets qui respectent à la fois les attentes des utilisateurs et les bonnes pratiques du
                         développement.
                     </p>
@@ -35,7 +37,7 @@ export default function HomePage() {
             </div>
 
             <div className="link-container">
-                <Link href="/files/CV%20Théo%20Vanbandon.pdf" className="back-link" download>
+            <Link href="/files/CV%20Théo%20Vanbandon.pdf" className="back-link" download>
                     Téléchargez mon CV ici
                 </Link>
             </div>
