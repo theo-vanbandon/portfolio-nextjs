@@ -10,14 +10,18 @@ export default function RayTracing() {
 
             <h3>Introduction</h3>
             <p>
-                Le ray tracing est une méthode de rendu graphique qui simule de manière réaliste le comportement de la lumière
-                dans une scène 3D. Utilisé dans les jeux vidéo, les films d'animation et la conception graphique, il permet de
+                Le ray tracing est une méthode de rendu graphique qui simule de manière réaliste le comportement de la
+                lumière
+                dans une scène 3D. Utilisé dans les jeux vidéo, les films d&apos;animation et la conception graphique,
+                il permet de
                 créer des images avec des reflets, des ombres et des éclairages précis.
             </p>
 
             <h3>Objectif</h3>
             <p>
-                L'objectif de ce projet est d'implémenter un moteur de rendu simple en ray tracing en utilisant des concepts
+                L&apos;objectif de ce projet est d&apos;implémenter un moteur de rendu simple en ray tracing en
+                utilisant des
+                concepts
                 fondamentaux comme les rayons, les intersections et les matériaux.
             </p>
 
@@ -31,9 +35,9 @@ export default function RayTracing() {
 
             <h3>Étapes principales</h3>
             <ul className="features-list">
-                <li>Génération de rayons pour chaque pixel de l'image.</li>
+                <li>Génération de rayons pour chaque pixel de l&apos;image.</li>
                 <li>Calcul des intersections entre les rayons et les objets de la scène.</li>
-                <li>Application de modèles d'éclairage pour les matériaux (Lambert, Phong, etc.).</li>
+                <li>Application de modèles d&apos;éclairage pour les matériaux (Lambert, Phong, etc.).</li>
                 <li>Ajout de fonctionnalités avancées comme les reflets et la réfraction.</li>
             </ul>
 
@@ -46,8 +50,9 @@ export default function RayTracing() {
 
             <h3>Conclusion</h3>
             <p>
-                Ce projet m'a permis de découvrir les bases du ray tracing tout en consolidant mes compétences en programmation
-                graphique. C'est une étape importante pour mieux comprendre les moteurs de rendu modernes.
+                Ce projet m&apos;a permis de découvrir les bases du ray tracing tout en consolidant mes compétences en
+                programmation
+                graphique. C&apos;est une étape importante pour mieux comprendre les moteurs de rendu modernes.
             </p>
 
             <div className="link-container">

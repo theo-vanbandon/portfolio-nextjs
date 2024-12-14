@@ -7,8 +7,8 @@ export default function WatifProject() {
             <h2 className="text-2xl font-bold mb-6">Réseau social: Watif</h2>
             <p className="project-date">Durée: 6 semaines</p>
             <p className="project-description">
-                Le projet vise à permettre aux utilisateurs d'explorer des scénarios hypothétiques en
-                répondant à la question "Et si ?" et en générant des images basées sur ces scénarios.
+                Le projet vise à permettre aux utilisateurs d&apos;explorer des scénarios hypothétiques en
+                répondant à la question &#34;Et si ?&#34; et en générant des images basées sur ces scénarios.
             </p>
             <h3 className="text-xl font-bold mt-6 mb-4">Technologies utilisées</h3>
             <ul className="technologies-list">

@@ -9,10 +9,12 @@ export default function Dsi() {
 
             <h3>Présentation</h3>
             <p>
-                Dans le cadre de mon BTS SNIR, j'ai effectué un stage de 6 semaines au sein de la Direction des Systèmes
-                d'Information (DSI) de la société Semences de France, située à La Chapelle-d'Armentières.
-                Ce stage a été l'occasion de participer à la masterisation de postes dans le cadre du renouvellement du
-                parc informatique de l'entreprise.
+                Dans le cadre de mon BTS SNIR, j&apos;ai effectué un stage de 6 semaines au sein de la Direction des
+                Systèmes
+                d&apos;Information (DSI) de la société Semences de France, située à La Chapelle-d&apos;Armentières.
+                Ce stage a été l&apos;occasion de participer à la masterisation de postes dans le cadre du
+                renouvellement du
+                parc informatique de l&apos;entreprise.
             </p>
 
             <h3>Localisation du stage</h3>
@@ -24,19 +26,21 @@ export default function Dsi() {
                 </iframe>
             </div>
 
-            <h3>L'objectif du stage</h3>
+            <h3>L&apos;objectif du stage</h3>
             <p>
-                L'objectif de mon stage était de participer au remplacement du parc informatique vieillissant. De
-                nombreux nouveaux ordinateurs sont arrivés et ont dû être installés, avec la mise en place d'un
-                environnement adapté aux besoins de l'entreprise.
-                J'ai été en charge de la masterisation des postes afin de remplacer les anciens ordinateurs qui étaient
-                devenus trop lents et ne répondaient plus aux exigences de l'entreprise (manque de RAM et de stockage).
+                L&apos;objectif de mon stage était de participer au remplacement du parc informatique vieillissant. De
+                nombreux nouveaux ordinateurs sont arrivés et ont dû être installés, avec la mise en place d&apos;un
+                environnement adapté aux besoins de l&apos;entreprise.
+                J&apos;ai été en charge de la masterisation des postes afin de remplacer les anciens ordinateurs qui
+                étaient
+                devenus trop lents et ne répondaient plus aux exigences de l&apos;entreprise (manque de RAM et de
+                stockage).
             </p>
 
             <h3>Tâches réalisées</h3>
             <ul className="features-list">
-                <li>Masterisation de postes (installation et configuration d'images système).</li>
-                <li>Installation et configuration de logiciels nécessaires à l'activité de l'entreprise.</li>
+                <li>Masterisation de postes (installation et configuration d&apos;images système).</li>
+                <li>Installation et configuration de logiciels nécessaires à l&apos;activité de l&apos;entreprise.</li>
                 <li>Intégration des postes dans le domaine Active Directory et suivi du parc informatique.</li>
                 <li>Gestion du réseau et de la téléphonie en entreprise (configuration des équipements réseau et des
                     téléphones IP).
@@ -51,11 +55,11 @@ export default function Dsi() {
                 <li>Téléphonie en entreprise</li>
             </ul>
 
-            <h3>Ce que le stage m'a apporté</h3>
+            <h3>Ce que le stage m&apos;a apporté</h3>
             <ul className="features-list">
                 <li>Notion de gestion de domaine avec Active Directory.</li>
                 <li>Compréhension du réseau physique et des équipements tels que les baies de brassage, les switches, et
-                    l'alimentation POE (Power Over Ethernet).
+                    l&apos;alimentation POE (Power Over Ethernet).
                 </li>
                 <li>Découverte de la téléphonie en entreprise avec le système OmniPCX.</li>
                 <li>Pratique de la masterisation de postes avec des images disque au format .wim.</li>
@@ -63,14 +67,18 @@ export default function Dsi() {
 
             <h3>Conclusion</h3>
             <p>
-                Ce stage m’a permis d'acquérir de solides compétences en gestion de parc informatique, en réseau et en
-                téléphonie d'entreprise. J'ai également pu me familiariser avec des outils de masterisation et de
+                Ce stage m&apos;a permis d&apos;acquérir de solides compétences en gestion de parc informatique, en
+                réseau et en
+                téléphonie d&apos;entreprise. J&apos;ai également pu me familiariser avec des outils de masterisation et
+                de
                 gestion de domaine, tout en apportant une contribution importante à la mise à jour du parc informatique
-                de l'entreprise.
+                de l&apos;entreprise.
             </p>
 
+
             <div className="link-container">
-                <Link href="/files/Rapport%20de%20stage%20Semences%20de%20France.pdf" className="download-link" download>
+                <Link href="/files/Rapport%20de%20stage%20Semences%20de%20France.pdf" className="download-link"
+                      download>
                     Télécharger le rapport de stage
                 </Link>
                 <Link href="/#experiences" className="back-link">

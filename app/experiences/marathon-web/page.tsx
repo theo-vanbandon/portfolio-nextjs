@@ -9,12 +9,14 @@ export default function MarathonWeb() {
 
             <h3>Présentation du projet</h3>
             <p>
-                Dans le cadre du BUT, nous avons participé à un hackathon de 36 heures sur le thème <em>"Une histoire
-                dont vous êtes le héros"</em>.
-                L'objectif était de concevoir une application web où le contenu évolue selon les choix des lecteurs.
+                Dans le cadre du BUT, nous avons participé à un hackathon de 36 heures sur le thème <em>&#34;Une histoire
+                dont vous êtes le héros&#34;</em>.
+                L&apos;objectif était de concevoir une application web où le contenu évolue selon les choix des
+                lecteurs.
             </p>
             <p>
-                Chaque équipe était composée d'étudiants en BUT Informatique et BUT MMI, permettant une collaboration
+                Chaque équipe était composée d&apos;étudiants en BUT Informatique et BUT MMI, permettant une
+                collaboration
                 entre
                 back-end, design et gestion de projet.
             </p>
@@ -35,8 +37,8 @@ export default function MarathonWeb() {
 
             <h3>Fonctionnalités</h3>
             <ul className="features-list">
-                <li>Page d'accueil affichant toutes les histoires présentes dans la base de données.</li>
-                <li>Page de détails d'une histoire avec avis des utilisateurs.</li>
+                <li>Page d&apos;accueil affichant toutes les histoires présentes dans la base de données.</li>
+                <li>Page de détails d&apos;une histoire avec avis des utilisateurs.</li>
                 <li>Formulaire permettant de créer un chapitre pour une histoire.</li>
                 <li>Fonctionnalité de lecture interactive avec choix utilisateur.</li>
             </ul>
@@ -50,20 +52,20 @@ export default function MarathonWeb() {
 
             <h3>Difficultés rencontrées</h3>
             <p>
-                L'intégration continue via GitLab entraînait des soucis d'affichage sur le serveur distant
+                L&apos;intégration continue via GitLab entraînait des soucis d&apos;affichage sur le serveur distant
                 (images et CSS), alors que tout fonctionnait en local. La fatigue, notamment à 6h du matin, a aussi été
                 un défi.
             </p>
 
             <h3>Bilan du marathon</h3>
             <p>
-                Cette expérience m'a permis de travailler en équipe avec des étudiants MMI, d'approfondir mes
+                Cette expérience m&apos;a permis de travailler en équipe avec des étudiants MMI, d&apos;approfondir mes
                 compétences
-                back-end, et de comprendre l'importance de la gestion de projet en conditions intensives.
+                back-end, et de comprendre l&apos;importance de la gestion de projet en conditions intensives.
             </p>
             <p>
-                Malgré les défis, l'organisation était excellente, avec un environnement de travail stimulant
-                (bornes d'arcade, baby-foot) et des pauses bienvenues.
+                Malgré les défis, l&apos;organisation était excellente, avec un environnement de travail stimulant
+                (bornes d&apos;arcade, baby-foot) et des pauses bienvenues.
             </p>
 
             <div className="link-container">

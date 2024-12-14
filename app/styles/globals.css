@@ -21,9 +21,9 @@ header ul {
     display: flex; /* Met les éléments à l'horizontale */
     gap: 1.5rem; /* Espace entre les liens */
     list-style: none; /* Supprime les puces */
-    margin: 0;
     padding: 0;
-    margin-left: auto; /* Pousse la liste à droite */
+    /* Pousse la liste à droite */
+    margin: 0 0 0 auto;
 }
 
 header a {
