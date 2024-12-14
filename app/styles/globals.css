@@ -1,0 +1,570 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Header */
+header {
+    background-color: #1f2937; /* gris foncé */
+    color: white;
+    display: flex; /* Permet d'aligner les enfants horizontalement */
+    align-items: center; /* Centre verticalement le contenu */
+    padding: 1rem; /* Ajoute un peu de marge intérieure */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+header ul {
+    display: flex; /* Met les éléments à l'horizontale */
+    gap: 1.5rem; /* Espace entre les liens */
+    list-style: none; /* Supprime les puces */
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Pousse la liste à droite */
+}
+
+header a {
+    color: #ffffff; /* Blanc */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+header a:hover {
+    color: #60a5fa; /* Bleu clair au survol */
+}
+
+/* Header icons */
+header ul li {
+    display: flex; /* Permet d'aligner l'icône et le texte horizontalement */
+    align-items: center; /* Centre verticalement l'icône et le texte */
+    gap: 0.5rem; /* Ajoute un espace entre l'icône et le texte */
+}
+
+header ul li a {
+    display: flex;
+    align-items: center;
+
+}
+
+header ul li svg {
+    margin-right: 0.5rem;
+    width: 1rem; /* Taille de l'icône */
+    height: 1rem; /* Taille de l'icône */
+    stroke: currentColor; /* Utilise la couleur actuelle pour correspondre au texte */
+    flex-shrink: 0; /* Empêche l'icône de se réduire */
+}
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #1f2937; /* Gris foncé */
+    color: #d1d5db; /* Gris clair */
+    padding: 2rem 1rem;
+    font-family: 'Arial', sans-serif;
+    border-top: 3px solid #2563eb; /* Ligne bleue */
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .flex {
+    display: flex;
+    flex-direction: column; /* Par défaut, vertical */
+    gap: 2rem; /* Espace entre sections (sur petits écrans) */
+    align-items: flex-start; /* Aligne les éléments au début sur petits écrans */
+    padding: 0 1rem; /* Ajoute un léger padding pour éviter que ce soit trop collé au bord */
+}
+
+@media (min-width: 768px) {
+    footer .flex {
+        flex-direction: row; /* Horizontal sur écrans md+ */
+        justify-content: space-evenly; /* Espacement uniforme entre les colonnes */
+        align-items: flex-start; /* Assure un alignement correct en haut */
+    }
+}
+
+footer .social-links,
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espace entre chaque élément à l'intérieur des div */
+    text-align: left; /* Texte aligné à gauche */
+}
+
+footer .social-links p,
+footer .contact-info p {
+    margin: 0;
+}
+
+footer .social-links p:first-child,
+footer .contact-info p:first-child {
+    font-size: 1.2rem; /* Augmente la taille de la police uniquement pour les titres */
+    font-weight: bold; /* Rend les titres en gras */
+    color: #d1d5db; /* Conserve la couleur des titres */
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex; /* Assure que l'icône et le texte restent alignés sur une ligne */
+    align-items: center; /* Centre verticalement l'icône et le texte */
+}
+
+footer a:hover {
+    color: #93c5fd; /* Bleu clair au survol */
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #9ca3af;
+    border-top: 1px solid #374151;
+    padding-top: 1rem;
+    width: 100%; /* Assurez-vous que le copyright occupe toute la largeur */
+}
+
+#copyright {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer a svg {
+    width: 1.25rem; /* Taille réduite */
+    height: 1.25rem; /* Taille réduite */
+    fill: currentColor;
+}
+
+footer a:hover svg {
+    fill: #93c5fd; /* Couleur bleu clair au survol */
+}
+
+footer svg {
+    fill: #ffffff; /* Couleur blanche pour les icônes SVG */
+    transition: fill 0.3s ease-in-out;
+}
+
+footer svg:hover {
+    fill: #93c5fd; /* Change la couleur au survol */
+}
+
+
+
+
+
+
+
+
+
+/* Présentation */
+.hero {
+    display: flex; /* Met en place un conteneur flex */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: space-between; /* Sépare la zone de texte et la photo */
+    gap: 2rem; /* Ajoute de l'espace entre les deux colonnes */
+    margin-bottom: 3rem; /* Espace sous le bloc */
+    margin-left: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.hero-text {
+    flex: 1; /* Prend autant de place que nécessaire */
+}
+
+.hero-text h1 {
+    font-family: 'NothingYouCouldDo', sans-serif; /* Police pour "Bienvenue sur mon" */
+    font-size: 3rem;
+    margin: 1rem 0 0;
+}
+
+.hero-text p:first-of-type {
+    font-family: 'NothingYouCouldDo', sans-serif; /* Police pour "portfolio" */
+    font-size: 2rem;
+    margin: 1rem 0 0;
+    text-align: center;
+}
+
+.hero-text p:nth-of-type(2) {
+    font-family: sans-serif; /* Une police standard ou une autre de votre choix */
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem; /* Taille du texte */
+    margin-bottom: 1rem;
+}
+
+.hero-photo {
+    flex: 1; /* Prend autant de place que nécessaire */
+    display: flex;
+    justify-content: center; /* Centre la photo horizontalement */
+    margin-top: 1rem;
+}
+
+.hero-photo img {
+    width: 100%; /* Assurez-vous que l'image ne dépasse pas la zone */
+    max-width: 300px; /* Taille maximale de l'image */
+    border-radius: 50%; /* Arrondit l'image si nécessaire */
+    object-fit: cover; /* Garde les proportions de la photo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre légère */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column; /* Les éléments s'empilent verticalement */
+    align-items: center; /* Centre les liens horizontalement */
+    gap: 1rem; /* Espacement entre les liens */
+    margin-top: 2rem; /* Espacement supérieur pour aérer */
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #005bb5;
+}
+
+
+
+
+
+
+
+
+
+/* Styles personnalisés (optionnel) */
+body {
+    @apply bg-gray-100 text-gray-900;
+}
+
+/* globals.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.horizontal-bar {
+    border: none;
+    height: 1px;
+    background-color: #0070f3; /* Choisissez la couleur qui s'intègre à votre thème */
+    margin: 2rem 0; /* Espacement autour de la barre */
+}
+
+
+
+
+
+
+/* Section des études */
+.studies-section {
+    display: flex;                  /* Activer le mode flexbox */
+    flex-direction: column;         /* Organiser les enfants en colonne */
+    justify-content: center;        /* Centrer verticalement */
+    align-items: center;            /* Centrer horizontalement */
+    padding: 2rem 1rem;
+    box-sizing: border-box;         /* Inclure le padding dans la hauteur totale */
+}
+
+.studies-section h2 {
+    font-family: 'WorkSansThin', sans-serif;  /* Applique la police NothingYouCouldDo */
+    text-align: center;                           /* Centre le texte */
+    font-size: 3rem;                              /* Taille de la police */
+    margin: 0 auto;                               /* Centre horizontalement */
+    padding-bottom: 1rem;                         /* Espacement sous le titre */
+    letter-spacing: -1px;
+    font-weight: 100;
+}
+
+.studies-timeline {
+    position: relative;
+    margin-left: 2rem; /* Plus d'espace pour la barre et les points */
+    border-left: 4px solid #0070f3; /* Barre verticale */
+    padding-left: 1rem;
+}
+
+.study-item {
+    position: relative;
+    padding-bottom: 2rem; /* Espacement entre les éléments */
+}
+
+.study-item:last-child {
+    padding-bottom: 0; /* Pas d'espace pour le dernier élément */
+}
+
+.study-item::before {
+    content: "";
+    position: absolute;
+    left: -1.5rem; /* Aligner le point avec la barre */
+    top: 0.3rem; /* Ajustement vertical pour centrer le point */
+    width: 12px;
+    height: 12px;
+    background-color: #0070f3;
+    border-radius: 50%; /* Point circulaire */
+    border: 2px solid white;
+    z-index: 1;
+}
+
+.study-year {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.study-details {
+    margin-left: 0.5rem; /* Légère marge pour séparer le texte */
+}
+
+.study-title {
+    display: block;
+    max-width: max-content; /* Limite la largeur au contenu */
+    font-size: 1rem;
+    color: #0070f3;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    transition: color 0.3s ease;
+}
+
+
+.study-title:hover {
+    color: #005bb5; /* Couleur plus sombre au survol */
+}
+
+.study-location {
+    font-size: 0.9rem;
+    color: #555;
+    text-decoration: none;
+}
+
+.study-location:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Expériences */
+.experiences-section {
+    padding: 2rem 1rem;
+}
+
+.experiences-section h2 {
+    text-align: center;
+    font-family: WorkSansThin, serif;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+.experiences-section h3 {
+    font-family: NothingYouCouldDo, sans-serif;
+    font-size: 20px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    opacity: 1;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.project-date, .project-duree {
+    font-size: 0.875rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.technologies-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.technology {
+    background-color: #0070f3;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    list-style-type: none;
+}
+
+.project-link {
+    color: #0070f3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* Compétences */
+.competences-section {
+    padding: 2rem;
+}
+
+.competences-section h2 {
+    text-align: center;
+    font-family: WorkSansThin, serif;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+.competences-section h3 {
+    font-family: NothingYouCouldDo, sans-serif;
+    font-size: 20px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    opacity: 1;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.competences-category {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-item {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espace entre l'icône et le texte */
+}
+
+.skill-icon {
+    width: 24px; /* Taille de l'icône */
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px; /* Optionnel, pour arrondir les icônes */
+}
+

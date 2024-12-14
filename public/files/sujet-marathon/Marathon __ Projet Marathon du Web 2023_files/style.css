@@ -1,0 +1,63 @@
+
+
+.issue .accordeon::before {
+    content: "Ticket " counter(exocounter) ".\0000a0\0000a0";
+}
+
+.issue .accordeon {
+    font-size: 1.2rem;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-top: 1rem;
+}
+
+.issue {
+    counter-increment: exocounter;
+}
+
+.issue h5{
+    margin-top : 0!important;
+}
+
+.issue .panel {
+    padding: 1em;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.issue.obligatoire .panel {
+    border: #BCC7E1 1px solid;
+
+}
+
+.issue.option .panel {
+    border: #eee 1px solid;
+
+}
+.issue-description-titre {
+    border-bottom: #00a5d4;
+}
+
+.issue-content-titre {
+    background-color: rgba(0, 189, 243, 0.14);
+    border-bottom: #00a5d4;
+
+}
+
+img[alt~="moodboard"] {
+    width:28%!important;
+    display: inline!important;
+    margin : 20px!important;
+}
+
+.issue.obligatoire button {
+    background-color : #BCC7E1;
+}

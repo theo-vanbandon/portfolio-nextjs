@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'NothingYouCouldDo';
+    src: url('../../public/fonts/NothingYouCouldDo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSansThin';
+    src: url('../../public/fonts/WorkSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
