@@ -11,10 +11,8 @@ export default function RootLayout({
     return (
         <html lang="fr">
         <head>
-            {/* Favicon SVG */}
             <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
             <title>Théo Vanbandon - Portfolio</title>
-            {/* Autres meta informations */}
         </head>
         <body className="flex flex-col min-h-screen">
         <Header/>
