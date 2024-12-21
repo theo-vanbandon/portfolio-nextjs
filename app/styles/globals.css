@@ -58,6 +58,37 @@ header ul li svg {
     flex-shrink: 0; /* Empêche l'icône de se réduire */
 }
 
+header .hamburger {
+    display: block; /* Affiche le bouton hamburger par défaut */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute; /* Positionnement absolu par rapport au header */
+    top: 1rem; /* Vous pouvez ajuster la position verticale si nécessaire */
+    right: 1rem; /* Place le bouton à droite avec une marge de 1rem */
+}
+
+header .menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+    z-index: 1000;
+}
+
+header .menu.open {
+    display: block; /* Affiche les éléments lorsque le menu est ouvert */
+}
+
+.hamburger-icon {
+    fill: white; /* Applique la couleur blanche */
+    width: 24px; /* Ajuste la taille de l'icône */
+    height: 24px;
+}
+
 
 
 
@@ -80,17 +111,15 @@ footer .container {
 
 footer .flex {
     display: flex;
-    flex-direction: column; /* Par défaut, vertical */
-    gap: 2rem; /* Espace entre sections (sur petits écrans) */
-    align-items: flex-start; /* Aligne les éléments au début sur petits écrans */
-    padding: 0 1rem; /* Ajoute un léger padding pour éviter que ce soit trop collé au bord */
+    flex-direction: column; /* Par défaut, les éléments sont en colonne sur les petits écrans */
+    gap: 1.5rem; /* Espacement entre les éléments */
 }
 
 @media (min-width: 768px) {
     footer .flex {
-        flex-direction: row; /* Horizontal sur écrans md+ */
+        flex-direction: row; /* Disposition horizontale sur les grands écrans */
         justify-content: space-evenly; /* Espacement uniforme entre les colonnes */
-        align-items: flex-start; /* Assure un alignement correct en haut */
+        align-items: flex-start; /* Aligner les éléments en haut */
     }
 }
 
@@ -568,3 +597,155 @@ a:hover {
     border-radius: 4px; /* Optionnel, pour arrondir les icônes */
 }
 
+
+
+
+
+
+/* Responsive */
+/* Responsivité : Petits écrans (smartphones) */
+@media (max-width: 640px) {
+    /* Section Hero */
+    .hero {
+        flex-direction: column; /* Empile les éléments */
+        align-items: center; /* Centre les éléments */
+        text-align: center; /* Centre le texte */
+    }
+
+    .hero-text h1 {
+        font-size: 2rem; /* Taille adaptée */
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .hero-photo {
+        margin-top: 2rem;
+    }
+
+    .hero-photo img {
+        width: 80%; /* Image plus petite */
+        max-width: 200px; /* Limite la taille */
+        margin: 0 auto; /* Centre horizontalement */
+    }
+
+    /* Navigation */
+    header {
+        position: relative;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1f2937; /* Fond du menu */
+        position: absolute;
+        top: 3rem; /* Juste en dessous du header */
+        right: 1rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    #menu.show {
+        display: flex; /* Affiche le menu */
+    }
+
+    #menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Sections : Studies, Experiences, Competences */
+    .studies, .experiences, .competences {
+        display: flex;
+        flex-direction: column; /* Empile les cartes */
+        gap: 1rem;
+    }
+
+    .studies-card, .experiences-card, .competences-card {
+        width: 100%; /* Utilise toute la largeur */
+    }
+}
+
+/* Responsivité : Tailles intermédiaires (tablettes) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .hero-photo img {
+        width: 70%;
+        max-width: 300px;
+    }
+
+    .studies, .experiences, .competences {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Deux colonnes */
+        gap: 1rem;
+    }
+
+    .studies-card, .experiences-card, .competences-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px; /* Ajout d'un padding pour éviter que le texte touche les bords */
+    }
+
+    /* Assurez-vous que la section contenant le texte est centrée */
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header .hamburger {
+        width: 40px; /* Taille définie pour le bouton hamburger */
+        height: 40px; /* Taille définie pour le bouton hamburger */
+    }
+
+    header .menu {
+        display: none; /* Cache les liens par défaut */
+        flex-direction: column;
+        position: absolute;
+        top: 3.5rem;
+        right: 1rem;
+        background-color: #1f2937;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    header .menu.open {
+        display: flex; /* Affiche le menu quand il est ouvert */
+    }
+
+    .hero {
+        margin-left: 0;
+    }
+
+    .studies-timeline {
+        margin-left: 0;
+    }
+}
