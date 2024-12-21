@@ -55,6 +55,7 @@ export default function Competences() {
                                         width={800}
                                         height={450}
                                         className="skill-icon"
+                                        loading="lazy"
                                     />
                                     {skill}
                                 </li>

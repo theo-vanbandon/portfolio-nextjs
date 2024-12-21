@@ -38,6 +38,7 @@ export default function HomePage() {
                         alt="Théo Vanbandon"
                         width={800}
                         height={450}
+                        loading="lazy"
                     />
                 </div>
             </div>

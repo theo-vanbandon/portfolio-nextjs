@@ -31,6 +31,7 @@ export default function RayTracing() {
                 width={800}
                 height={450}
                 className="project-image"
+                loading="lazy"
             />
 
             <h3>Étapes principales</h3>
