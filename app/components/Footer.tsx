@@ -8,7 +8,7 @@ export default function Footer() {
                     {/* Réseaux sociaux */}
                     <div className="w-full md:w-1/2 flex flex-col items-start">
                         <div className="social-links">
-                            <p className="text-sm font-bold">Réseaux sociaux:</p>
+                            <p className="text-sm font-bold">Réseaux sociaux :</p>
                             <Link href="https://github.com/theo-vanbandon" className="flex items-center gap-2">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ export default function Footer() {
                     {/* Contactez-moi */}
                     <div className="w-full md:w-1/2 flex flex-col items-start">
                         <div className="contact-info">
-                            <p className="text-sm font-bold">Contactez-moi:</p>
+                            <p className="text-sm font-bold">Contactez-moi :</p>
                             <p>Téléphone : +33 7 84 95 30 67</p>
                             <p>Email : theo.vanbandon@gmail.com</p>
                         </div>
@@ -52,7 +52,7 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <div id="copyright" className="mt-6 text-center border-t border-gray-700 pt-4">
-                    <p className="text-sm">&copy; 2024 Théo Vanbandon. Tous droits réservés.</p>
+                    <p className="text-sm">&copy; 2025 Théo Vanbandon. Tous droits réservés.</p>
                 </div>
             </div>
         </footer>
