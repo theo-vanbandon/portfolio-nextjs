@@ -44,7 +44,7 @@ export default function HomePage() {
             </div>
 
             <div className="link-container">
-            <Link href="/files/CV%20Théo%20Vanbandon.pdf" className="back-link" download>
+            <Link href="/files/CV%20Vanbandon%20Théo.pdf" className="back-link" download>
                     Téléchargez mon CV ici
                 </Link>
             </div>
