@@ -28,7 +28,7 @@ const projects: Project[] = [
     },
     {
         title: "Marathon du web",
-        description: "Participation à un hackathon pour développer une application innovante en 48 heures.",
+        description: "Participation à un marathon pour développer une application innovante en 36 heures.",
         link: "/experiences/marathon-web",
         technologies: ["Laravel", "HTML", "BDD"],
         date: "20 Décembre 2023 - 21 Décembre 2023",

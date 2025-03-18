@@ -5,11 +5,11 @@ export default function MarathonWeb() {
     return (
         <section className="project-detail-section">
             <h2>Marathon du Web</h2>
-            <p className="project-date">20 Décembre 2023 - 21 Décembre 2023 (Durée : 48 heures)</p>
+            <p className="project-date">20 Décembre 2023 - 21 Décembre 2023 (Durée : 36 heures)</p>
 
             <h3>Présentation du projet</h3>
             <p>
-                Dans le cadre du BUT, nous avons participé à un hackathon de 36 heures sur le thème <em>&#34;Une histoire
+                Dans le cadre du BUT, nous avons participé à un marathon de 36 heures sur le thème <em>&#34;Une histoire
                 dont vous êtes le héros&#34;</em>.
                 L&apos;objectif était de concevoir une application web où le contenu évolue selon les choix des
                 lecteurs.
