@@ -98,3 +98,43 @@
     margin: 20px 0;
 }
 
+.project-detail-section .features-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.project-detail-section .features-list li {
+    margin-bottom: 0.5rem;
+    color: #444;
+    font-size: 1rem;
+}
+
+.project-detail-section .features-list li::marker {
+    color: #0070f3; /* Changement de couleur des puces */
+}
+
+.styled-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0070f3;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.styled-link:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.styled-link:active {
+    background-color: #003d7a;
+    transform: translateY(0);
+}
