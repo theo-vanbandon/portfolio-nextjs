@@ -17,6 +17,7 @@ export default function Competences() {
             "Spring (Java)",
             "Laravel (PHP)",
             "Next.js (TypeScript)",
+            "Symfony (PHP)",
             "Angular (TypeScript)",
             "CodeIgniter (PHP)",
             "Flask (Python)",
