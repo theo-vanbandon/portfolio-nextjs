@@ -65,10 +65,10 @@ export default function Stage() {
 
             <div className="link-container">
                 <Link href="https://assonaturegohelle.net/" className="styled-link">
-                    Voir le site ici
+                    🚀 Voir l&apos;application en ligne
                 </Link>
                 <Link href="/files/Rapport%20de%20stage.pdf" className="download-link" download>
-                    Télécharger le rapport de stage
+                    📥 Télécharger le rapport de stage
                 </Link>
                 <Link href="/#experiences" className="back-link">
                     ← Retour aux expériences

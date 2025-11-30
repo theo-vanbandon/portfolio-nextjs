@@ -46,7 +46,7 @@ export default function MarathonWeb() {
             <div className="link-container">
                 <a href="/files/sujet-marathon/index.html" className="styled-link" target="_blank"
                    rel="noopener noreferrer">
-                    Voir le sujet ici
+                    📄 Voir le sujet ici
                 </a>
             </div>
 
@@ -70,7 +70,7 @@ export default function MarathonWeb() {
 
             <div className="link-container">
                 <Link href="https://github.com/theo-vanbandon/web-marathon-project" className="download-link" download>
-                    Lien du projet
+                    📂 Voir le code sur GitHub
                 </Link>
                 <Link href="/#experiences" className="back-link">
                     ← Retour aux expériences

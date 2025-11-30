@@ -58,7 +58,7 @@ export default function RayTracing() {
 
             <div className="link-container">
                 <Link href="https://github.com/theo-vanbandon/ray-tracing-project" className="download-link" download>
-                    Lien du projet
+                    📂 Voir le code sur GitHub
                 </Link>
                 <Link href="/#experiences" className="back-link">
                     ← Retour aux expériences

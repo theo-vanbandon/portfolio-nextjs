@@ -72,7 +72,7 @@ export default function VibrationsProject() {
             <div className="link-container">
                 <Link href="/files/Dossier%20de%20projet%20maintenance%20prédictive%20des%20machines%20tournantes.pdf"
                       className="download-link" download>
-                    Télécharger le dossier de projet
+                    📥 Télécharger le dossier de projet
                 </Link>
                 <Link href="/#experiences" className="back-link">
                     ← Retour aux expériences

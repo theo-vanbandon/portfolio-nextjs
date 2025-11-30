@@ -79,7 +79,7 @@ export default function Dsi() {
             <div className="link-container">
                 <Link href="/files/Rapport%20de%20stage%20Semences%20de%20France.pdf" className="download-link"
                       download>
-                    Télécharger le rapport de stage
+                    📥 Télécharger le rapport de stage
                 </Link>
                 <Link href="/#experiences" className="back-link">
                     ← Retour aux expériences
