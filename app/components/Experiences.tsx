@@ -11,6 +11,14 @@ type Project = {
 
 const projects: Project[] = [
     {
+        title: "Générateur de spéciale de rallye",
+        description: "Application web de génération automatique de spéciales de rallye basée sur OpenStreetMap avec détection d'intersections et export multi-formats.",
+        link: "/experiences/rally-stage-generator",
+        technologies: ["React", "Node.js", "Express", "Leaflet", "OpenStreetMap"],
+        date: "Novembre 2025",
+        duree: "3 semaines",
+    },
+    {
         title: "Réseau social : Watif",
         description: "Réalisation d'un réseau social basé sur la question \"Et si ?\" avec de la génération d'images.",
         link: "/experiences/watif",
