@@ -1,0 +1,130 @@
+/* Styles améliorés pour la section de détails du projet */
+.project-detail-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* TITRE PRINCIPAL */
+.project-detail-section h2 {
+    color: #222;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #0070f3;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* SOUS-TITRES */
+.project-detail-section h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* PARAGRAPHES */
+.project-detail-section p {
+    color: #444;
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* DATE DU PROJET */
+.project-detail-section .project-date {
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* TECHNOLOGIES */
+.project-detail-section .technologies-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project-detail-section .technologies-list li {
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 1rem;
+    background-color: #0070f3;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* LISTES DE FONCTIONNALITÉS */
+.project-detail-section .features-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.project-detail-section .features-list li {
+    margin-bottom: 0.5rem;
+    color: #444;
+    font-size: 1rem;
+}
+
+.project-detail-section .features-list li::marker {
+    color: #0070f3;
+}
+
+/* 🔥 — BOUTONS DE FIN (identiques à Watif) — 🔥 */
+.project-detail-section .link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* bouton bleu */
+.styled-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0070f3;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.styled-link:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+/* bouton → retour */
+.back-link {
+    display: inline-block;
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #005bb5;
+}

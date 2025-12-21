@@ -11,6 +11,14 @@ type Project = {
 
 const projects: Project[] = [
     {
+        title: "Epic Games Free Notifier",
+        description: "Script Node.js automatisé avec GitHub Actions qui récupère les jeux gratuits de l'Epic Games Store et envoie une notification par email chaque semaine.",
+        link: "/experiences/epic-notifier",
+        technologies: ["Node.js", "GitHub Actions", "Nodemailer", "Axios", "API REST"],
+        date: "Décembre 2024",
+        duree: "4 jours",
+    },
+    {
         title: "Générateur de spéciale de rallye",
         description: "Application web de génération automatique de spéciales de rallye basée sur OpenStreetMap avec détection d'intersections et export multi-formats.",
         link: "/experiences/rally-stage-generator",
