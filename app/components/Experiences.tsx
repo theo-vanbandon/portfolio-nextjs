@@ -15,7 +15,7 @@ const projects: Project[] = [
         description: "Script Node.js automatisé avec GitHub Actions qui récupère les jeux gratuits de l'Epic Games Store et envoie une notification par email chaque semaine.",
         link: "/experiences/epic-notifier",
         technologies: ["Node.js", "GitHub Actions", "Nodemailer", "Axios", "API REST"],
-        date: "Décembre 2024",
+        date: "Décembre 2025",
         duree: "4 jours",
     },
     {
