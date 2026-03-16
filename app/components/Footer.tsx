@@ -52,8 +52,11 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <div id="copyright" className="mt-6 text-center border-t border-gray-700 pt-4">
-                    <p className="text-sm">&copy; 2025 Théo Vanbandon. Tous droits réservés.</p>
+                    <p className="text-sm">
+                        &copy; {new Date().getFullYear()} Théo Vanbandon. Tous droits réservés.
+                    </p>
                 </div>
+
             </div>
         </footer>
     );
