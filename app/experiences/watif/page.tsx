@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import "../../styles/Experiences/watif.css";
 
 export default function WatifProject() {
@@ -45,11 +46,60 @@ export default function WatifProject() {
                 <li>Documentation du code et suivi de la qualité avec SonarQube</li>
             </ul>
 
+            <h3>Aperçu du projet</h3>
+            <div className="screenshots-grid">
+                <figure className="screenshot-item">
+                    <Image
+                        src="/images/watif-home.webp"
+                        alt="Watif - Page d'accueil avec les posts recommandés"
+                        width={800}
+                        height={450}
+                        className="project-image"
+                        loading="lazy"
+                    />
+                    <figcaption>Page d&apos;accueil - fil des posts recommandés</figcaption>
+                </figure>
+                <figure className="screenshot-item">
+                    <Image
+                        src="/images/watif-profile.webp"
+                        alt="Watif - Profil d'un utilisateur"
+                        width={800}
+                        height={450}
+                        className="project-image"
+                        loading="lazy"
+                    />
+                    <figcaption>Profil utilisateur</figcaption>
+                </figure>
+                <figure className="screenshot-item">
+                    <Image
+                        src="/images/watif-post.webp"
+                        alt="Watif - Post avec les actions disponibles"
+                        width={800}
+                        height={450}
+                        className="project-image"
+                        loading="lazy"
+                    />
+                    <figcaption>Vue d&apos;un post - like, commentaire, modification et suppression</figcaption>
+                </figure>
+                <figure className="screenshot-item">
+                    <Image
+                        src="/images/watif-messaging.webp"
+                        alt="Watif - Messagerie instantanée"
+                        width={800}
+                        height={450}
+                        className="project-image"
+                        loading="lazy"
+                    />
+                    <figcaption>Messagerie instantanée entre utilisateurs</figcaption>
+                </figure>
+            </div>
+
             <h3>Technologies utilisées</h3>
             <ul className="technologies-list">
                 <li>Spring</li>
                 <li>React</li>
                 <li>MongoDB</li>
+                <li>Neo4j</li>
                 <li>Python</li>
                 <li>Git</li>
                 <li>SonarQube</li>
@@ -66,15 +116,9 @@ export default function WatifProject() {
                 tant sur le plan technique que sur la coordination entre les membres du groupe.
             </p>
 
-            {/*
-            <div className="project-status">
-                <p>🚧 Ce projet est en cours de développement. 🚧</p>
-            </div>
-            */}
-
             <div className="link-container">
                 <Link href="https://github.com/orgs/watif-projects/repositories" className="styled-link"
-                      target="_blank">
+                      target="_blank" rel="noopener noreferrer">
                     📂 Voir le code sur GitHub
                 </Link>
                 <Link href="/#experiences" className="back-link">
