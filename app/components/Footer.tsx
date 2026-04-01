@@ -44,8 +44,12 @@ export default function Footer() {
                     <div className="w-full md:w-1/2 flex flex-col items-start">
                         <div className="contact-info">
                             <p className="text-sm font-bold">Contactez-moi :</p>
-                            <p>Téléphone : +33 7 84 95 30 67</p>
-                            <p>Email : theo.vanbandon@gmail.com</p>
+                            <Link href="tel:+33784953067" className="flex items-center gap-2">
+                                Téléphone : +33 7 84 95 30 67
+                            </Link>
+                            <Link href="mailto:theo.vanbandon@gmail.com" className="flex items-center gap-2">
+                                Email : theo.vanbandon@gmail.com
+                            </Link>
                         </div>
                     </div>
                 </div>
