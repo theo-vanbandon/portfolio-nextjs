@@ -30,7 +30,7 @@ const projects: Project[] = [
         title: "Réseau social : Watif",
         description: "Réalisation d'un réseau social basé sur la question \"Et si ?\" avec de la génération d'images.",
         link: "/experiences/watif",
-        technologies: ["Spring", "React", "MongoDB", "Python"],
+        technologies: ["Spring", "React", "MongoDB", "Neo4j", "Python", "Git", "SonarQube"],
         date: "",
         duree: "6 semaines",
     },
