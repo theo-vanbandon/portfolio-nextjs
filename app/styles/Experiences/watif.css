@@ -138,3 +138,54 @@
     background-color: #003d7a;
     transform: translateY(0);
 }
+
+
+
+/* Pour les images */
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px 6px 0 0; /* Arrondi seulement le haut */
+    display: block;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.screenshot-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden; 
+}
+
+/* Page d'accueil (1er) et messagerie (4ème) en pleine largeur */
+.screenshot-item:nth-child(1),
+.screenshot-item:nth-child(4) {
+    grid-column: 1 / -1;
+}
+
+.screenshot-item figcaption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #555;
+    font-style: italic;
+    padding: 0.6rem 1rem;
+    border-top: 1px solid #ddd;
+    background-color: #f4f4f4;
+}
+
+@media (max-width: 640px) {
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+    }
+}
