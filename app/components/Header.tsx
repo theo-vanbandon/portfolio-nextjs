@@ -10,6 +10,11 @@ export default function Header() {
 
     const closeMenu = () => setIsMenuOpen(false);
 
+    const scrollToSection = (id: string) => {
+        closeMenu();
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <header>
             <h1>Théo Vanbandon Portfolio</h1>
@@ -35,7 +40,7 @@ export default function Header() {
             </button>
             <ul className={`menu ${isMenuOpen ? "open" : ""}`}>
                 <li>
-                    <Link href="/#home" onClick={closeMenu}>
+                    <Link href="/#home" onClick={() => scrollToSection("home")}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -54,7 +59,7 @@ export default function Header() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/#formations" onClick={closeMenu}>
+                    <Link href="/#formations" onClick={() => scrollToSection("formations")}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -73,7 +78,7 @@ export default function Header() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/#experiences" onClick={closeMenu}>
+                    <Link href="/#experiences" onClick={() => scrollToSection("experiences")}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -92,7 +97,7 @@ export default function Header() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/#competences" onClick={closeMenu}>
+                    <Link href="/#competences" onClick={() => scrollToSection("competences")}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -111,7 +116,7 @@ export default function Header() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/#contact" onClick={closeMenu}>
+                    <Link href="/#contact" onClick={() => scrollToSection("contact")}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
