@@ -64,7 +64,7 @@ export default function Stage() {
             </p>
 
             <div className="link-container">
-                <Link href="https://assonaturegohelle.net/" className="styled-link">
+                <Link href="https://assonaturegohelle.net/" className="styled-link" target="_blank" rel="noopener noreferrer">
                     🚀 Voir l&apos;application en ligne
                 </Link>
                 <Link href="/files/Rapport%20de%20stage.pdf" className="download-link" download>
