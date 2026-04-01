@@ -48,7 +48,7 @@ const projects: Project[] = [
         link: "/experiences/marathon-web",
         technologies: ["Laravel", "HTML", "BDD"],
         date: "20 Décembre 2023 - 21 Décembre 2023",
-        duree: "48 heures",
+        duree: "36 heures",
     },
     {
         title: "Ray Tracing",
