@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="container mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-start">
                     {/* Réseaux sociaux */}
-                    <div className="w-full md:w-1/2 flex flex-col items-start">
+                    <div className="w-full md:w-1/2 flex flex-col items-start" id="contact">
                         <div className="social-links">
                             <p className="text-sm font-bold">Réseaux sociaux :</p>
                             <Link href="https://github.com/theo-vanbandon" className="flex items-center gap-2">
