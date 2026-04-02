@@ -80,7 +80,7 @@ export default function Experiences() {
     return (
         <section id="experiences" className="experiences-section">
             <h2 className="text-2xl font-bold mb-6">Expériences</h2>
-            <h3>Stage et projets</h3>
+            <h3>Stages et projets</h3>
             <div className="projects-grid">
                 {projects.map((project, index) => (
                     <div key={index} className="project-card">
