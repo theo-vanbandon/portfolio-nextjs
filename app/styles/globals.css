@@ -326,8 +326,8 @@ a:hover {
 .horizontal-bar {
     border: none;
     height: 1px;
-    background-color: #0070f3; /* Choisissez la couleur qui s'intègre à votre thème */
-    margin: 2rem 0; /* Espacement autour de la barre */
+    background-color: #0070f3; 
+    margin: 2rem 0; 
 }
 
 
@@ -534,6 +534,8 @@ a:hover {
 /* Compétences */
 .competences-section {
     padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .competences-section h2 {
@@ -549,52 +551,81 @@ a:hover {
     font-size: 20px;
     text-transform: lowercase;
     letter-spacing: 1px;
-    opacity: 1;
     font-style: italic;
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
-.competences-grid {
+.competences-block {
+    margin-bottom: 1.5rem;
+}
+
+.competences-category-title {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #555;
+    margin-bottom: 0.75rem;
+}
+
+.competences-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+}
+
+.competences-two-col {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
 }
 
-.competences-category {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.category-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.skills-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.skill-item {
-    margin: 0.5rem 0;
-    color: #333;
-}
-
-.skill-item {
+.skill-row {
     display: flex;
     align-items: center;
-    gap: 8px; /* Espace entre l'icône et le texte */
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-.skill-icon {
-    width: 24px; /* Taille de l'icône */
-    height: 24px;
-    object-fit: contain;
-    border-radius: 4px; /* Optionnel, pour arrondir les icônes */
+.skill-row:last-child {
+    margin-bottom: 0;
+}
+
+.skill-pill {
+    font-size: 12px;
+    width: 110px;
+    flex-shrink: 0;
+    color: #444;
+}
+
+.bar-bg {
+    flex: 1;
+    height: 5px;
+    background: #eeeeee;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+}
+
+.bar-label {
+    font-size: 11px;
+    color: #888;
+    width: 75px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+    .competences-two-col {
+        grid-template-columns: 1fr;
+    }
 }
 
 
