@@ -739,15 +739,27 @@ a:hover {
     p {
         text-align: center;
         margin: 0 auto;
-        padding: 0 10px; /* Ajout d'un padding pour éviter que le texte touche les bords */
+        padding: 0 10px;
     }
 
-    /* Assurez-vous que la section contenant le texte est centrée */
     section {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .competences-section {
+        width: 100%;
+        align-items: stretch; /* annule le align-items: center hérité */
+    }
+
+    .competences-block,
+    .competences-card,
+    .competences-two-col,
+    .skill-row,
+    .bar-bg {
+        width: 100%;
     }
 }
 

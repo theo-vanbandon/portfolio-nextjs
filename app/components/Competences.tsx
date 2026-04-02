@@ -34,34 +34,34 @@ const SkillBar = ({ name, color, level, animated }: {
 
 export default function Competences() {
     const langages: { name: string; color: string; level: Level }[] = [
-        { name: "Java",       color: "#F89820", level: "avancé" },
-        { name: "PHP",        color: "#777BB4", level: "avancé" },
-        { name: "HTML",       color: "#E34F26", level: "avancé" },
-        { name: "CSS",        color: "#1572B6", level: "avancé" },
+        { name: "Java", color: "#F89820", level: "avancé" },
+        { name: "PHP", color: "#777BB4", level: "avancé" },
+        { name: "HTML", color: "#E34F26", level: "avancé" },
+        { name: "CSS", color: "#1572B6", level: "avancé" },
         { name: "TypeScript", color: "#3178C6", level: "avancé" },
         { name: "JavaScript", color: "#F7DF1E", level: "avancé" },
-        { name: "Python",     color: "#3776AB", level: "intermédiaire" },
-        { name: "C++",        color: "#00599C", level: "débutant" },
-        { name: "Kotlin",     color: "#7F52FF", level: "débutant" },
+        { name: "Python", color: "#3776AB", level: "intermédiaire" },
+        { name: "C++", color: "#00599C", level: "débutant" },
+        { name: "Kotlin", color: "#7F52FF", level: "débutant" },
     ];
 
     const frameworks: { name: string; color: string; level: Level }[] = [
-        { name: "Spring",      color: "#6DB33F", level: "avancé" },
-        { name: "Laravel",     color: "#FF2D20", level: "avancé" },
-        { name: "Next.js",     color: "#000000", level: "avancé" },
-        { name: "React",       color: "#61DAFB", level: "avancé" },
-        { name: "Symfony",     color: "#000000", level: "intermédiaire" },
-        { name: "Angular",     color: "#DD0031", level: "intermédiaire" },
-        { name: "Flask",       color: "#000000", level: "débutant" },
+        { name: "Spring", color: "#6DB33F", level: "avancé" },
+        { name: "Laravel", color: "#FF2D20", level: "avancé" },
+        { name: "Next.js", color: "#000000", level: "avancé" },
+        { name: "React", color: "#61DAFB", level: "avancé" },
+        { name: "Symfony", color: "#000000", level: "intermédiaire" },
+        { name: "Angular", color: "#DD0031", level: "intermédiaire" },
+        { name: "Flask", color: "#000000", level: "débutant" },
         { name: "CodeIgniter", color: "#EF4223", level: "débutant" },
     ];
 
     const databases: { name: string; color: string; level: Level }[] = [
-        { name: "MySQL",      color: "#4479A1", level: "avancé" },
-        { name: "MongoDB",    color: "#47A248", level: "avancé" },
-        { name: "SQLite",     color: "#003B57", level: "avancé" },
+        { name: "MySQL", color: "#4479A1", level: "avancé" },
+        { name: "MongoDB", color: "#47A248", level: "avancé" },
+        { name: "SQLite", color: "#003B57", level: "avancé" },
         { name: "PostgreSQL", color: "#336791", level: "débutant" },
-        { name: "Neo4j",      color: "#008CC1", level: "débutant" },
+        { name: "Neo4j", color: "#008CC1", level: "débutant" },
     ];
 
     const sectionRef = useRef<HTMLElement>(null);
@@ -76,7 +76,7 @@ export default function Competences() {
                     setAnimated(false);
                 }
             },
-            { threshold: 0.2 }
+            { threshold: 0 }
         );
 
         if (sectionRef.current) observer.observe(sectionRef.current);
