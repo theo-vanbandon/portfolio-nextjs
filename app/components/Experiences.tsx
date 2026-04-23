@@ -11,6 +11,14 @@ type Project = {
 
 const projects: Project[] = [
     {
+        title: "LocalShare",
+        description: "Outil léger de transfert de fichiers et de texte entre appareils sur un réseau Wi-Fi local. Aucune installation requise côté client, tout passe via un navigateur sans connexion internet.",
+        link: "/experiences/localshare",
+        technologies: ["Python", "JavaScript", "HTML", "CSS", "HTTP", "Pytest", "Vitest"],
+        date: "Mars - Avril 2026",
+        duree: "3 semaines",
+    },
+    {
         title: "Epic Games Free Notifier",
         description: "Script Node.js automatisé avec GitHub Actions qui récupère les jeux gratuits de l'Epic Games Store et envoie une notification par email chaque semaine.",
         link: "/experiences/epic-notifier",
@@ -31,7 +39,7 @@ const projects: Project[] = [
         description: "Réalisation d'un réseau social basé sur la question \"Et si ?\" avec de la génération d'images.",
         link: "/experiences/watif",
         technologies: ["Spring", "React", "MongoDB", "Neo4j", "Python", "Git", "SonarQube"],
-        date: "",
+        date: "2024 - 2026",
         duree: "6 semaines",
     },
     {

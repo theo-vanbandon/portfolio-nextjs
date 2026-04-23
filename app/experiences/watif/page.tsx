@@ -6,7 +6,7 @@ export default function WatifProject() {
     return (
         <section id="watif-project" className="project-detail-section">
             <h2 className="text-2xl font-bold mb-6">Réseau social : Watif</h2>
-            <p className="project-date">Février 2024 - Mars 2024 (Durée : 6 semaines)</p>
+            <p className="project-date">2024 - 2025 (Durée : 6 semaines)</p>
 
             <h3>Présentation</h3>
             <p>
