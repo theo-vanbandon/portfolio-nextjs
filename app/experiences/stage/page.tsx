@@ -1,4 +1,3 @@
-import "../../styles/Experiences/stage.css";
 import Link from "next/link";
 
 export default function Stage() {

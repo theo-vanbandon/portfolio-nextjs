@@ -1,4 +1,3 @@
-import "../../styles/Experiences/raytracing.css";
 import Link from "next/link";
 import Image from "next/image";
 

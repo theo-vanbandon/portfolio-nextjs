@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import "../../styles/Experiences/watif.css";
 
 export default function WatifProject() {
     return (
         <section id="watif-project" className="project-detail-section">
-            <h2 className="text-2xl font-bold mb-6">Réseau social : Watif</h2>
+            <h2>Réseau social : Watif</h2>
             <p className="project-date">2024 - 2025 (Durée : 6 semaines)</p>
 
             <h3>Présentation</h3>
@@ -22,8 +21,8 @@ export default function WatifProject() {
 
             <h3>Objectif du projet</h3>
             <p>
-                L&apos;objectif était de concevoir une plateforme complète de type réseau social, combinant une
-                interface utilisateur réactive avec un back-end robuste, et intégrant un système de génération
+                L&apos;objectif était de concevoir une plateforme complète de type réseau social combinant une
+                interface utilisateur réactive avec un back-end robuste. Le tout en intégrant un système de génération
                 d&apos;images automatisé à partir de prompts textuels.
             </p>
 
@@ -110,7 +109,7 @@ export default function WatifProject() {
                 Ce projet m&apos;a permis de renforcer mes compétences en développement full-stack, notamment sur la
                 gestion des API, l&apos;utilisation de MongoDB pour le stockage des données,
                 ainsi que l&apos;intégration d&apos;un système de génération d&apos;images. La première semaine de
-                collaboration avec un étudiant Anversois a également été très enrichissante,
+                collaboration avec un étudiant Anversois a également été très enrichissante
                 car elle m&apos;a permis de travailler en anglais sur des problématiques techniques concrètes.
                 Travailler en équipe sur un réseau social complet a été très formateur,
                 tant sur le plan technique que sur la coordination entre les membres du groupe.

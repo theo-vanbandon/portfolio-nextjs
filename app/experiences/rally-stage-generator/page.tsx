@@ -1,10 +1,9 @@
 import Link from "next/link";
-import "../../styles/Experiences/rally-stage-generator.css";
 
 export default function RallyStageGenerator() {
     return (
         <section id="rally-stage-project" className="project-detail-section">
-            <h2 className="text-2xl font-bold mb-6">Rally Stage Generator</h2>
+            <h2>Rally Stage Generator</h2>
             <p className="project-date">Novembre 2025 (Durée : 3 semaines)</p>
 
             <h3>Présentation</h3>

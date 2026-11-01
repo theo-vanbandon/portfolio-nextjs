@@ -1,4 +1,3 @@
-import "../../styles/Experiences/marathonweb.css";
 import Link from "next/link";
 
 export default function MarathonWeb() {

@@ -1,0 +1,284 @@
+/* Styles communs à toutes les pages de app/experiences */
+.project-page {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 0 1rem;
+    animation: fadeIn 0.5s ease-out both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-breadcrumb {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.project-breadcrumb:hover {
+    color: var(--text);
+}
+
+/* ===== En-tête ===== */
+.project-detail-section h2 {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+.project-detail-section .project-date {
+    display: inline-block;
+    margin: 1rem 0 1.5rem;
+    padding: 0.3rem 0.75rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.8rem;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 999px;
+}
+
+/* ===== Texte ===== */
+.project-detail-section h3 {
+    margin: 3rem 0 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--border);
+}
+
+.project-detail-section h3::before {
+    content: "## ";
+    font-family: var(--font-mono), monospace;
+    font-weight: 400;
+    color: var(--accent);
+}
+
+.project-detail-section h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.project-detail-section p {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+
+.project-detail-section strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.project-detail-section p a,
+.project-detail-section li a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* ===== Listes ===== */
+.project-detail-section .features-list,
+.project-detail-section .iso-section ul {
+    margin: 1rem 0;
+}
+
+.project-detail-section .features-list li,
+.project-detail-section .iso-section li {
+    position: relative;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    color: var(--text-muted);
+}
+
+.project-detail-section .features-list li::before,
+.project-detail-section .iso-section li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+.project-detail-section .technologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.project-detail-section .technologies-list li {
+    padding: 0.3rem 0.8rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.8rem;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid transparent;
+    border-radius: 999px;
+}
+
+/* ===== Encadré (norme ISO) ===== */
+.project-detail-section .iso-section {
+    margin-top: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+}
+
+.project-detail-section .iso-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== Images ===== */
+.project-detail-section .project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.project-detail-section .screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.project-detail-section .screenshot-item {
+    overflow: hidden;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+/* Page d'accueil (1re) et messagerie (4e) de Watif en pleine largeur */
+.project-detail-section .screenshot-item:nth-child(1),
+.project-detail-section .screenshot-item:nth-child(4) {
+    grid-column: 1 / -1;
+}
+
+.project-detail-section .screenshot-item .project-image {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.project-detail-section .screenshot-item figcaption {
+    padding: 0.6rem 1rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--text-faint);
+    border-top: 1px solid var(--border);
+}
+
+/* ===== Carte ===== */
+.project-detail-section .map-container iframe {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+/* Carte Google Maps en couleurs normales sur le thème clair */
+:root[data-theme="light"] .project-detail-section .map-container iframe {
+    filter: none;
+}
+
+/* ===== Liens de fin ===== */
+.project-detail-section .link-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.styled-link,
+.download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.3rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.875rem;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.styled-link {
+    font-weight: 600;
+    color: var(--bg);
+    background: var(--accent);
+}
+
+.styled-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px -8px var(--accent-glow);
+}
+
+.download-link {
+    color: var(--accent);
+}
+
+.download-link:hover {
+    transform: translateY(-2px);
+    background: var(--accent-soft);
+}
+
+.back-link {
+    margin-left: auto;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--accent);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+    .project-page {
+        padding-top: 2rem;
+    }
+
+    .project-detail-section .screenshots-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-detail-section .link-container {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .styled-link,
+    .download-link {
+        justify-content: center;
+    }
+
+    .back-link {
+        margin-left: 0;
+    }
+}

@@ -1,17 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import "../../styles/Experiences/rally-stage-generator.css";
 
 export default function EpicNotifier() {
     return (
         <section id="epic-notifier-project" className="project-detail-section">
-            <h2 className="text-2xl font-bold mb-6">Epic Games Free Notifier</h2>
+            <h2>Epic Games Free Notifier</h2>
             <p className="project-date">Décembre 2025 (Durée : 4 jours)</p>
 
             <h3>Présentation</h3>
             <p>
                 Epic Games Free Notifier est un script Node.js automatisé qui récupère chaque semaine les jeux 
-                gratuits disponibles sur l&apos;Epic Games Store et envoie une notification par email stylisée. 
+                gratuits disponibles sur l&apos;Epic Games Store et envoie une notification par email. 
                 Le projet utilise GitHub Actions pour une exécution automatique sans nécessiter de serveur dédié, 
                 tout en respectant les standards de qualité du code (SonarQube).
             </p>

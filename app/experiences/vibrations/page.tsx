@@ -1,16 +1,15 @@
 import Link from "next/link";
-import "../../styles/Experiences/vibrations.css"
 
 export default function VibrationsProject() {
     return (
         <section id="vibrations-project" className="project-detail-section">
-            <h2 className="text-2xl font-bold mb-6">Vibration d&apos;un moteur</h2>
+            <h2>Vibration d&apos;un moteur</h2>
             <p className="project-date">Janvier - Juin 2023</p>
             <p className="project-description">
                 Création d&apos;une application mesurant les vibrations d&apos;un moteur afin de définir son état de
                 santé.
             </p>
-            <h3 className="text-xl font-bold mt-6 mb-4">Technologies utilisées</h3>
+            <h3>Technologies utilisées</h3>
             <ul className="technologies-list">
                 <li className="technology">ESP32</li>
                 <li className="technology">Node.js</li>
@@ -20,18 +19,18 @@ export default function VibrationsProject() {
                 <li className="technology">HTML</li>
                 <li className="technology">JavaScript</li>
             </ul>
-            <h3 className="text-xl font-bold mt-6 mb-4">Détails du projet</h3>
+            <h3>Détails du projet</h3>
             <p>
                 Ce projet consiste à développer une application capable de mesurer les vibrations d&apos;un moteur en
                 temps
                 réel.
                 L&apos;objectif est de détecter les anomalies et de fournir des informations sur l&apos;état de santé du
                 moteur.
-                L&apos;application utilise un microcontrôleur ESP32 pour collecter les données de vibration, qui sont
+                L&apos;application utilise un microcontrôleur ESP32 pour collecter les données de vibration qui sont
                 ensuite
                 transmises via le protocole MQTT à un serveur Node.js pour traitement et analyse.
             </p>
-            <h3 className="text-xl font-bold mt-6 mb-4">Fonctionnalités</h3>
+            <h3>Fonctionnalités</h3>
             <ul className="features-list">
                 <li>Collecte de données de vibration en temps réel</li>
                 <li>Transmission des données via MQTT</li>
@@ -40,14 +39,14 @@ export default function VibrationsProject() {
                 <li>Envoi des données dans le cloud pour les succursales</li>
                 <li>Interface utilisateur pour visualiser l&apos;état de santé du moteur dans un graphique</li>
             </ul>
-            <h3 className="text-xl font-bold mt-6 mb-4">Résultats</h3>
+            <h3>Résultats</h3>
             <p>
                 Le projet a permis de développer une solution efficace pour la surveillance des vibrations d&apos;un
                 moteur.
                 Les résultats ont montré que l&apos;application est capable de détecter les anomalies,
                 ce qui permet de prévenir les pannes et d&apos;améliorer la maintenance prédictive.
             </p>
-            <h3 className="text-xl font-bold mt-6 mb-4">Norme ISO 10816-1</h3>
+            <h3>Norme ISO 10816-1</h3>
             <div className="iso-section">
                 <h4>Évaluation des vibrations des moteurs</h4>
                 <p>
@@ -64,7 +63,7 @@ export default function VibrationsProject() {
                     état.
                 </p>
             </div>
-            <h3 className="text-xl font-bold mt-6 mb-4">Téléchargement du dossier de projet</h3>
+            <h3>Téléchargement du dossier de projet</h3>
             <p>
                 Vous pouvez télécharger le dossier de projet pour consulter les contributions de chaque membre de
                 l&apos;équipe et voir en détail qui a fait quoi.

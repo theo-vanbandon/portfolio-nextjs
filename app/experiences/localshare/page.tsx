@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import "../../styles/Experiences/rally-stage-generator.css";
 
 export default function LocalShare() {
     return (
         <section id="localshare-project" className="project-detail-section">
-            <h2 className="text-2xl font-bold mb-6">LocalShare</h2>
+            <h2>LocalShare</h2>
             <p className="project-date">Mars - Avril 2026 (Durée : 3 semaines)</p>
 
             <h3>Le problème</h3>
@@ -90,7 +89,7 @@ export default function LocalShare() {
 
             <h3>Défis techniques rencontrés</h3>
             <ul className="features-list">
-                <li>La synchronisation du presse-papier entre le téléphone et le PC a demandé pas mal d&apos;ajustements : gérer les délais, éviter les conflits quand les deux appareils écrivent en même temps, et s&apos;assurer que le texte affiché est toujours le bon sans surcharger le serveur de requêtes</li>
+                <li>La synchronisation du presse-papier entre le téléphone et le PC a demandé pas mal d&apos;ajustements : gérer les délais, éviter les conflits quand les deux appareils écrivent en même temps, s&apos;assurer que le texte affiché est toujours le bon sans surcharger le serveur de requêtes</li>
                 <li>Garantir 100% de couverture de tests sur du code réseau sans dépendances tierces</li>
                 <li>Rendre l&apos;installation aussi simple que possible sur Windows avec un <code>.bat</code> qui génère la config selon la volonté de l&apos;utilisateur et crée un raccourci sur le bureau</li>
             </ul>

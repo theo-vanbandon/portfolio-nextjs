@@ -1,10 +1,9 @@
 import Link from "next/link";
-import "../../styles/Experiences/rally-stage-generator.css";
 
 export default function StageAem() {
     return (
         <section id="stage-aem-project" className="project-detail-section">
-            <h2 className="text-2xl font-bold mb-6">Stage chez AEM</h2>
+            <h2>Stage chez AEM</h2>
             <p className="project-date">24 Juin 2026 - 30 Septembre 2026 (Durée : 14 semaines)</p>
 
             <h3>Présentation</h3>
