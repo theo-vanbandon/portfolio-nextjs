@@ -11,6 +11,14 @@ type Project = {
 
 const projects: Project[] = [
     {
+        title: "Stage chez AEM",
+        description: "Stage dans une entreprise de moto-réducteurs : application de facturation après la panne du logiciel comptable, modernisation du parc informatique et création du site web.",
+        link: "/experiences/stage-aem",
+        technologies: ["Laravel", "PHP", "MySQL", "Blade", "DomPDF", "PHPUnit", "OVHcloud", "Git", "GitHub Actions"],
+        date: "24 Juin 2026 - 30 Septembre 2026",
+        duree: "14 semaines",
+    },
+    {
         title: "LocalShare",
         description: "Outil léger de transfert de fichiers et de texte entre appareils sur un réseau Wi-Fi local. Aucune installation requise côté client, tout passe via un navigateur sans connexion internet.",
         link: "/experiences/localshare",

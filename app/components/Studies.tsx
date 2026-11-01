@@ -10,7 +10,7 @@ type Study = {
 
 const studies: Study[] = [
     {
-        year: "Septembre 2023 à aujourd'hui",
+        year: "Septembre 2023 à Juillet 2026",
         title: "BUT Informatique",
         location: "IUT de Lens",
         locationLink: "http://www.iut-lens.univ-artois.fr/",
