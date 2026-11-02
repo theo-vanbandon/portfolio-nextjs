@@ -84,11 +84,11 @@ export const projects: Project[] = [
         duree: "5 jours",
     },
     {
-        title: "Vibration d'un moteur",
+        title: "Maintenance prédictive",
         type: "scolaire",
         description: "Création d'une application mesurant les vibrations d'un moteur afin de définir son état de santé.",
         link: "/experiences/vibrations",
-        technologies: ["ESP32", "Node.js", "MQTT"],
+        technologies: ["ESP32", "C++", "BLE", "Node.js", "MQTT", "MySQL"],
         date: "Janvier - Juin 2023",
         duree: "",
     },
