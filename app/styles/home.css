@@ -184,9 +184,19 @@
     margin-bottom: 1.25rem;
 }
 
-.project-card-icon {
-    width: 2rem;
-    height: 2rem;
+/* Type du projet : texte mono sans fond, pour ne pas ressembler aux tags de technos */
+.project-card-type {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono), monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.project-card-type svg {
+    width: 1.5rem;
+    height: 1.5rem;
     color: var(--accent);
 }
 

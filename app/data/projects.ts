@@ -1,5 +1,8 @@
+export type ProjectType = "stage" | "perso" | "scolaire";
+
 export type Project = {
     title: string;
+    type: ProjectType;
     description: string;
     link: string;
     technologies: string[];
@@ -9,7 +12,8 @@ export type Project = {
 
 export const projects: Project[] = [
     {
-        title: "Stage chez AEM",
+        title: "Facturation & site web - AEM",
+        type: "stage",
         description: "Stage dans une entreprise de moto-réducteurs : application de facturation après la panne du logiciel comptable, modernisation du parc informatique et création du site web.",
         link: "/experiences/stage-aem",
         technologies: ["Laravel", "PHP", "MySQL", "Blade", "DomPDF", "PHPUnit", "OVHcloud", "Git", "GitHub Actions"],
@@ -18,6 +22,7 @@ export const projects: Project[] = [
     },
     {
         title: "LocalShare",
+        type: "perso",
         description: "Outil léger de transfert de fichiers et de texte entre appareils sur un réseau Wi-Fi local. Aucune installation requise côté client, tout passe via un navigateur sans connexion internet.",
         link: "/experiences/localshare",
         technologies: ["Python", "JavaScript", "HTML", "CSS", "HTTP", "Pytest", "Vitest"],
@@ -26,6 +31,7 @@ export const projects: Project[] = [
     },
     {
         title: "Epic Games Free Notifier",
+        type: "perso",
         description: "Script Node.js automatisé avec GitHub Actions qui récupère les jeux gratuits de l'Epic Games Store et envoie une notification par email chaque semaine.",
         link: "/experiences/epic-notifier",
         technologies: ["Node.js", "GitHub Actions", "Nodemailer", "Axios", "API REST"],
@@ -34,6 +40,7 @@ export const projects: Project[] = [
     },
     {
         title: "Générateur de spéciale de rallye",
+        type: "perso",
         description: "Application web de génération automatique de spéciales de rallye basée sur OpenStreetMap avec détection d'intersections et export multi-formats.",
         link: "/experiences/rally-stage-generator",
         technologies: ["React", "Node.js", "Express", "Leaflet", "OpenStreetMap"],
@@ -42,6 +49,7 @@ export const projects: Project[] = [
     },
     {
         title: "Réseau social : Watif",
+        type: "scolaire",
         description: "Réalisation d'un réseau social basé sur la question \"Et si ?\" avec de la génération d'images.",
         link: "/experiences/watif",
         technologies: ["Spring", "React", "MongoDB", "Neo4j", "Python", "Git", "SonarQube"],
@@ -49,7 +57,8 @@ export const projects: Project[] = [
         duree: "6 semaines",
     },
     {
-        title: "Stage refonte d'un site",
+        title: "Refonte du site - Association de naturalistes",
+        type: "stage",
         description: "Refonte du site web de l'Association des Naturalistes de la Gohelle en partant d'un projet existant.",
         link: "/experiences/stage",
         technologies: ["Laravel", "HTML", "BDD", "Git"],
@@ -58,6 +67,7 @@ export const projects: Project[] = [
     },
     {
         title: "Marathon du web",
+        type: "scolaire",
         description: "Participation à un marathon pour développer une application innovante en 36 heures.",
         link: "/experiences/marathon-web",
         technologies: ["Laravel", "HTML", "BDD"],
@@ -66,6 +76,7 @@ export const projects: Project[] = [
     },
     {
         title: "Ray Tracing",
+        type: "scolaire",
         description: "Génération de formes (sphères, triangles) en ajoutant des lumières et calculer leurs ombres et reflets.",
         link: "/experiences/ray-tracing",
         technologies: ["Java"],
@@ -74,6 +85,7 @@ export const projects: Project[] = [
     },
     {
         title: "Vibration d'un moteur",
+        type: "scolaire",
         description: "Création d'une application mesurant les vibrations d'un moteur afin de définir son état de santé.",
         link: "/experiences/vibrations",
         technologies: ["ESP32", "Node.js", "MQTT"],
@@ -81,7 +93,8 @@ export const projects: Project[] = [
         duree: "",
     },
     {
-        title: "Stage à la DSI",
+        title: "Renouvellement du parc - Semences de France",
+        type: "stage",
         description: "Masterisation de postes visant à remplacer l'actuel parc informatique.",
         link: "/experiences/dsi",
         technologies: ["Boot PXE", "Masterisation", "Téléphonie"],
