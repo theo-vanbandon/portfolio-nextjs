@@ -26,9 +26,9 @@ export default function EpicNotifier() {
             <Image
                 src="/images/epic-notifier.webp"
                 alt="Epic Games Free Notifier - Email Preview"
-                width={800}
-                height={450}
-                className="project-image"
+                width={601}
+                height={559}
+                className="project-image project-image-compact"
                 loading="lazy"
             />
 

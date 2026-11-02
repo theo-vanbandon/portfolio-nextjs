@@ -36,9 +36,9 @@ export default function LocalShare() {
             <Image
                 src="/images/localshare-main.webp"
                 alt="LocalShare - Interface principale"
-                width={800}
-                height={450}
-                className="project-image"
+                width={1080}
+                height={2164}
+                className="project-image project-image-portrait"
                 loading="lazy"
             />
 

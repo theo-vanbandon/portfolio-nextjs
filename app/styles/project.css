@@ -151,6 +151,18 @@
     border-radius: var(--radius);
 }
 
+/* Capture de téléphone (format vertical) : en pleine largeur elle ferait ~1500px de haut */
+.project-detail-section .project-image-portrait {
+    max-width: 320px;
+    margin-inline: auto;
+}
+
+/* Image petite et presque carrée : ne pas l'agrandir au-delà de sa taille réelle */
+.project-detail-section .project-image-compact {
+    max-width: 520px;
+    margin-inline: auto;
+}
+
 .project-detail-section .screenshots-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
