@@ -12,6 +12,15 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        title: "Générateur de spéciale de rallye",
+        type: "perso",
+        description: "Application web qui prépare une journée de rallye autour d'une commune : trois spéciales compatibles, liaisons, roadbook PDF et exports GPS, à partir des données routières de l'IGN.",
+        link: "/experiences/rally-stage-generator",
+        technologies: ["React", "Node.js", "Express", "Leaflet", "IGN BD TOPO", "jsPDF", "Jest"],
+        date: "Novembre 2025, refonte en Novembre 2026",
+        duree: "3 + 2 semaines",
+    },
+    {
         title: "Facturation & site web - AEM",
         type: "stage",
         description: "Stage dans une entreprise de moto-réducteurs : application de facturation après la panne du logiciel comptable, modernisation du parc informatique et création du site web.",
@@ -37,15 +46,6 @@ export const projects: Project[] = [
         technologies: ["Node.js", "GitHub Actions", "Nodemailer", "Axios", "API REST"],
         date: "Décembre 2025",
         duree: "4 jours",
-    },
-    {
-        title: "Générateur de spéciale de rallye",
-        type: "perso",
-        description: "Application web de génération automatique de spéciales de rallye basée sur OpenStreetMap avec détection d'intersections et export multi-formats.",
-        link: "/experiences/rally-stage-generator",
-        technologies: ["React", "Node.js", "Express", "Leaflet", "OpenStreetMap"],
-        date: "Novembre 2025",
-        duree: "3 semaines",
     },
     {
         title: "Réseau social : Watif",
