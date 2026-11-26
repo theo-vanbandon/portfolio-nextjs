@@ -10,7 +10,8 @@ export default function Footer() {
                 <div className="contact-grid">
                     <Link href="mailto:theo.vanbandon@gmail.com" className="contact-card">
                         <span className="contact-label">email</span>
-                        theo.vanbandon@gmail.com
+                        {/* Si l'adresse ne tient pas sur une ligne, elle se coupe avant le @ et jamais dans le domaine */}
+                        <span>theo.vanbandon<wbr />@gmail.com</span>
                     </Link>
                     <Link href="tel:+33784953067" className="contact-card">
                         <span className="contact-label">téléphone</span>

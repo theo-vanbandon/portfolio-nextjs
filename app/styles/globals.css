@@ -396,7 +396,7 @@ code {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
     transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
