@@ -21,6 +21,15 @@ export const projects: Project[] = [
         duree: "3 + 2 semaines",
     },
     {
+        title: "Serveur domestique & PortWatch",
+        type: "perso",
+        description: "Raspberry Pi de récupération transformé en serveur domestique, et PortWatch, une application qui affiche d'un coup d'œil l'état des services du réseau local.",
+        link: "/experiences/portwatch",
+        technologies: ["Python", "JavaScript", "Raspberry Pi", "Linux", "systemd"],
+        date: "Octobre 2026",
+        duree: "2 semaines",
+    },
+    {
         title: "Facturation & site web - AEM",
         type: "stage",
         description: "Stage dans une entreprise de moto-réducteurs : application de facturation après la panne du logiciel comptable, modernisation du parc informatique et création du site web.",
